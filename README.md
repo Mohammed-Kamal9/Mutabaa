@@ -1,1 +1,1 @@
-https://delightful-lebkuchen-d0f0d5.netlify.app/
+https://mutabaa-book-appointment.netlify.app/
