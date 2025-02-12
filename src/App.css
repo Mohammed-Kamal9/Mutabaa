@@ -1,0 +1,401 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+/* أنماط TopBar الحالية */
+.top-bar {
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  font-size: 16px;
+  flex-direction: row-reverse;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.top-bar a:hover {
+  color: #1e721e;
+}
+
+.top-bar .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.top-bar .social-icons a {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+/* Media Queries للهواتف */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column; /* تحويل التخطيط إلى عمودي */
+    align-items: flex-start; /* محاذاة العناصر إلى اليسار */
+    padding: 10px 20px; /* تقليل الهوامش */
+  }
+
+  .top-bar .social-icons {
+    justify-content: center; /* توسيط أيقونات السوشيال ميديا */
+    width: 100%; /* جعلها تأخذ العرض الكامل */
+    margin-top: 10px; /* إضافة مسافة فوق الأيقونات */
+  }
+
+  .top-bar .social-icons a {
+    margin: 0 10px; /* تقليل المسافة بين الأيقونات */
+  }
+}
+
+/* أنماط Header الحالية */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background: white;
+  flex-direction: row-reverse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .contact {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  order: -1;
+}
+
+.header .contact i {
+  font-size: 26px;
+  color: #c00;
+  margin-right: 15px;
+}
+
+.header .nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.header .nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header .nav-menu a:hover {
+  color: #c00;
+}
+
+.header .logo img {
+  height: 80px;
+}
+
+/* Media Queries للهواتف */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* تحويل التخطيط إلى عمودي */
+    align-items: center; /* توسيط العناصر */
+    padding: 20px; /* تقليل الهوامش */
+  }
+
+  .header .contact {
+    margin-top: 10px; /* إضافة مسافة فوق قسم الاتصال */
+  }
+
+  .header .nav-menu {
+    flex-direction: column; /* تحويل القائمة إلى عمودية */
+    align-items: center; /* توسيط العناصر */
+    gap: 10px; /* تقليل المسافة بين العناصر */
+    margin-top: 10px; /* إضافة مسافة فوق القائمة */
+  }
+}
+
+/* ////// */
+
+.logo {
+  order: 1;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #c00;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  order: -1;
+}
+
+.contact i {
+  font-size: 26px;
+  color: #c00;
+  margin-right: 15px;
+}
+
+/* أنماط Container الحالية */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+/* Media Queries للهواتف */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* تقليل الهوامش */
+    margin: 20px auto; /* تقليل المسافة الخارجية */
+  }
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #11740f;
+  line-height: 1.6;
+}
+
+.day {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #444;
+  font-size: 20px;
+}
+
+.time {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.closed {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.booking-wrapper {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 10px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 18px;
+}
+
+.booking-input,
+.booking-select,
+.booking-button {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.phone-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.phone-container span {
+  background: #ddd;
+  padding: 12px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.phone-container input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  flex: 1;
+}
+
+.booking-button {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+  background-color: #1e721e;
+}
+
+.booking-list {
+  list-style: none;
+  padding: 0;
+}
+
+.booking-list-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  border-radius: 8px;
+  text-align: right;
+  font-size: 16px;
+}
+
+.cta-section {
+  background-color: #00b342;
+  background-image: url("/src/nav-logo-small.png");
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  height: 300px;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-section .cta-button {
+  margin-top: 115px;
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-section .cta-button:hover {
+  background-color: #1e721e;
+}
+
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.footer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #1e721e;
+}
+
+/* Media Queries للتجاوبية */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .contact {
+    margin-top: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .social-icons {
+    margin-top: 10px;
+  }
+
+  .footer .social-icons a {
+    margin: 0 10px;
+  }
+}
